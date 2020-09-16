@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+BlogSpace : Popular
+{% endblock %}
+{% block head %} {{ super() }} {% endblock %}
+
+{% block main %}
+<h1>Popular</h1>
+{% for i in range(11) %}
+<p>sdwLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+{% endfor %}
+{% endblock %}

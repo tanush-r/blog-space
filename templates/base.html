@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta content = "text/html" charset="utf-8" />
+    <!--<meta name="description" content="NexMail Email - Free, Fast and Secure with end-to-end encryption." />
+    <meta name="keywords" content="email, freemail, email account, mail, mailing, nexmail, highreptile mail, nexmail email " />
+    <meta name="author" content="HighReptile" />-->
+        <title>
+            {% block title %}{% endblock %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Icon -->
+		<link rel="icon" href="favicon_logo.ico"/>
+		<!--Apple Touch Icon -->
+		<link rel="apple-touch-icon" href="favicon_logo.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+            background-color : #002366
+
+        }
+        .footer{
+            padding-top: 30px;
+            padding-bottom:50px;
+            background-color: #f08080;
+            color: white;
+        }
+        body {
+            font-family: 'Titillium Web';
+        }
+        .footer a{
+            color: white;
+        }
+        .btn {
+            color: #f08080;
+            border-color: #f08080;
+                    }
+        .btn:hover {
+            background-color: #f08080;
+            color: white;
+            border-color: #f08080;
+            }
+        .nav-pad {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+    {% endblock %}
+</head>
+
+<body>
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow p-3 mb-5">
+    <div class = "container">
+        <!--<div class="navbar-center">
+            <a class="navbar-brand " href="#">
+      <img src="apple.png" alt="Logo" style="width:20px;">
+    </a>-->
+          <a class="navbar-brand" href="#">BlogSpace</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+                <a class="nav-link py-0 active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0 active" href="/compose">Compose</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0 active" href="/popular">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="#">Disabled</a>
+              </li>
+
+            </ul>
+            <a href="#" class="btn btn-outline-primary mr-3">Login</a>
+            <a href="#" class="btn btn-outline-primary mr-0" >Register</a>
+
+          </div>
+        </div>
+</nav>
+
+    {% endblock %}
+<div class="container nav-pad" >
+    {% block main %}{% endblock %}
+</div>
+{% block footer %}
+<footer class="footer" >
+    <div class="container">
+        <div class = "row">
+            <div class = "col-sm">
+                <h3>BlogSpace 2020</h3>
+                <p>Contact : <a href="#">query@blogspace.com</a></p>
+            </div>
+
+            <div class = "col-sm">
+                <h3>Links</h3>
+                <p> <a href="#">Link 1a</a></p>
+                <p> <a href="#">Link 1b</a></p>
+                <p> <a href="#">Link 1c</a></p>
+            </div>
+            <div class = "col-sm">
+                <h3>Links</h3>
+                <p> <a href="#">Link 2a</a></p>
+                <p> <a href="#">Link 2b</a></p>
+                <p> <a href="#">Link 2c</a></p>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+{% endblock %}
+</body>
+
+</html>
