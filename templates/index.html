@@ -5,8 +5,7 @@ BlogSpace : Free blog{% endblock %}
 {% block head %} {{ super() }} {% endblock %}
 
 {% block main %}
-<h1 class="text-center ele heading">Home</h1>
-<div id="carouselExampleIndicators" class="carousel slide ele" data-ride="carousel" >
+<!--<div id="carouselExampleIndicators" class="carousel slide ele" data-ride="carousel" >
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -43,10 +42,53 @@ BlogSpace : Free blog{% endblock %}
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>-->
+<div class="pt-4 pb-4">
+<div class="card card-image border-dark"  >
+      <div class="text-dark text-center rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
+
+          <!-- Content -->
+          <h1 class="card-title font-weight-bold heading my-4 py-2">WELCOME TO BLOGSPACE!</h1>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
+            perferendis vitae cumque et quo impedit.</p>
+          <a class="btn" style="background-color:#f08080 ;"> View project</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="pt-4 pb-4">
+<div class="card card-image border-dark">
+      <div class="text-dark text-left rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
+
+          <!-- Content -->
+          <h2 class="card-title font-weight-bold h2 my-4 py-2">Create your account</h2>
+          <p class="mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
+            perferendis vitae cumque et quo impedit.</p>
+          <a class="btn text-dark" style="background-color:#f08080;" href="/register">View project</a>
+
+        </div>
+      </div>
+    </div>
 </div>
-{% for i in range(11) %}
-<p id="ele" style="padding-top:50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+<div class="pt-4 pb-4">
+<div class="card card-image border-dark" >
+      <div class="text-dark text-right rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
 
-{% endfor %}
+          <!-- Content -->
+          <h2 class="card-title font-weight-bold h2 my-4 py-2">Browse popular blogs</h2>
+          <p class="mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+            obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis
+            perferendis vitae cumque et quo impedit.</p>
+          <a class="btn text-dark" style="background-color:#f08080 ;" href="/popular">Browse</a>
 
+        </div>
+      </div>
+    </div>
+</div>
 {% endblock %}

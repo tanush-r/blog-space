@@ -19,6 +19,7 @@
         <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT Sans Caption' rel='stylesheet'>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -28,14 +29,15 @@
 
     <style>
         .navbar{
-            background-color : #002366
-
+            background-color : #002366;
+            font-family: 'PT Sans Caption';
         }
         .footer{
             padding-top: 30px;
             padding-bottom:50px;
             background-color: #f08080;
             color: white;
+            font-family: 'PT Sans Caption';
         }
         body {
             font-family: 'Merriweather';
@@ -68,55 +70,24 @@
             padding-top: 50px;
             padding-bottom: 50px;
         }
-        textarea {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
 
-            width: 100%;
-        }
         .heading {
             font-size:5vw;
         }
         .sub-heading {
             font-size:3vw;
         }
+        .card {
+            background-image: url(https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            }
+        @media screen and (max-width: 600px) {
+            .align-test {
+                col: 40;
+            }
+        }
     </style>
 
-    <script>
-        (function ($) {
-  "use strict";
 
-  var defaultOptions = {
-    tagClass: function(item) {
-      return 'badge badge-info';
-    },
-    focusClass: 'focus',
-    itemValue: function(item) {
-      return item ? item.toString() : item;
-    },
-    itemText: function(item) {
-      return this.itemValue(item);
-    },
-    itemTitle: function(item) {
-      return null;
-    },
-    freeInput: true,
-    addOnBlur: true,
-    maxTags: undefined,
-    maxChars: undefined,
-    confirmKeys: [13, 44],
-    delimiter: ',',
-    delimiterRegex: null,
-    cancelConfirmKeysOnEmpty: false,
-    onTagExists: function(item, $tag) {
-      $tag.hide().fadeIn();
-    },
-    trimValue: false,
-    allowDuplicates: false,
-    triggerChange: true
-  };
-    </script>
 
     {% endblock %}
 </head>
@@ -129,7 +100,7 @@
             <a class="navbar-brand " href="#">
       <img src="apple.png" alt="Logo" style="width:20px;">
     </a>-->
-          <a class="navbar-brand" href="/">BlogSpace</a>
+          <a class="navbar-brand" href="/" style="font-family: 'Merriweather';">BlogSpace</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -184,16 +155,16 @@
             </div>
 
             <div class = "col-sm">
-                <h3>Links</h3>
-                <p> <a href="#">Link 1a</a></p>
-                <p> <a href="#">Link 1b</a></p>
-                <p> <a href="#">Link 1c</a></p>
+                <h3>Social</h3>
+                <p> <a href="https://github.com/tanushmal/blog-space">GitHub</a></p>
+                <p> <a href="#">Instagram</a></p>
+                <p> <a href="#">YouTube</a></p>
             </div>
             <div class = "col-sm">
-                <h3>Links</h3>
-                <p> <a href="#">Link 2a</a></p>
-                <p> <a href="#">Link 2b</a></p>
-                <p> <a href="#">Link 2c</a></p>
+                <h3>Support</h3>
+                <p> <a href="#">Kickstarter</a></p>
+                <p> <a href="#">Donation</a></p>
+                <p> <a href="#">Mail</a></p>
 
             </div>
 
