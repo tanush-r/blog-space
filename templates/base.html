@@ -77,9 +77,18 @@
         .sub-heading {
             font-size:3vw;
         }
+        .para {
+            font-size:2vw;
+        }
         .card {
-            background-image: url(https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            //background-image: url(https://cdn.highreptile.com/backgrounds/gradient-background-png.png);
+            //https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+            margin-top : auto;
+            margin-bottom : auto;
+            background-repeat: no-repeat;
+            background-size: cover;
             }
+
         @media screen and (max-width: 600px) {
             .align-test {
                 col: 40;
@@ -100,7 +109,7 @@
             <a class="navbar-brand " href="#">
       <img src="apple.png" alt="Logo" style="width:20px;">
     </a>-->
-          <a class="navbar-brand" href="/" style="font-family: 'Merriweather';">BlogSpace</a>
+          <a class="navbar-brand" href="{{ url_for('index') }}" style="font-family: 'Merriweather';">BlogSpace</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -109,13 +118,13 @@
             <ul class="navbar-nav mr-auto">
 
               <li class="nav-item">
-                <a class="nav-link py-0 active" href="/">Home</a>
+                <a class="nav-link py-0 active" href="{{ url_for('index') }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link py-0 active" href="/compose">Compose</a>
+                <a class="nav-link py-0 active" href="{{ url_for('compose') }} ">Compose</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link py-0 active" href="/popular">Popular</a>
+                <a class="nav-link py-0 active" href="{{ url_for('popular') }}">Popular</a>
               </li>
               <!--<li class="nav-item">
                 <a class="nav-link py-0" href="#">Disabled</a>
@@ -134,8 +143,8 @@
               </li>-->
 
             </ul>
-            <a href="/login" class="btn btn-outline-primary mr-3" >Login</a>
-            <a href="/register" class="btn btn-outline-primary mr-0" >Register</a>
+            <a href="{{ url_for('login') }}" class="btn btn-outline-primary mr-3" >Login</a>
+            <a href="{{ url_for('register') }} " class="btn btn-outline-primary mr-0" >Register</a>
 
           </div>
         </div>
